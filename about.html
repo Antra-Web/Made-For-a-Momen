@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Made for a Moment</title>
+<meta name="description" content="The story of Made for a Moment — a small handmade gifting studio built on the belief that a gift should feel like a memory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.ab-hero{ min-height:80vh; display:flex; align-items:flex-end; position:relative; overflow:hidden; }
+.ab-hero img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.ab-hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(34,20,17,.75),rgba(34,20,17,.1)); }
+.ab-story{ display:grid; grid-template-columns:.9fr 1.1fr; gap:64px; align-items:center; }
+@media(max-width:900px){ .ab-story{ grid-template-columns:1fr; } }
+.timeline{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+.timeline-item{ border-top:1px solid rgba(34,29,24,.18); padding-top:16px; }
+.timeline-year{ font-family:var(--font-script); font-size:1.5rem; color:var(--terracotta); }
+@media(max-width:800px){ .timeline{ grid-template-columns:repeat(2,1fr); } }
+.value-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--charcoal); }
+.value-card{ background:var(--ivory); padding:40px 30px; }
+@media(max-width:800px){ .value-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="page-veil" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="brand">Made for a Moment<small>HANDMADE GIFTING STUDIO</small></a>
+  <nav class="nav-desktop" aria-label="Primary">
+    <a href="shop.html">Shop</a><a href="custom-gifts.html">Custom Gifts</a><a href="about.html" class="active">About</a><a href="gallery.html">Gallery</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" data-search-open aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+    <button class="icon-btn" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h15l-1.5 9.5a2 2 0 0 1-2 1.7H8.7a2 2 0 0 1-2-1.7L5 3H2"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span class="cart-count">0</span></button>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" aria-label="Mobile">
+  <button class="mobile-nav-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a href="shop.html">Shop</a><a href="custom-gifts.html">Custom Gifts</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+  <div class="mobile-nav-foot"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></div>
+</nav>
+
+<main id="main">
+  <section class="ab-hero">
+    <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1800&q=80&auto=format&fit=crop" alt="The studio table at Made for a Moment, covered in ribbon and gift-making materials">
+    <div class="container" style="position:relative;z-index:2;color:var(--ivory);padding-bottom:70px;">
+      <h1 class="display-1" style="font-size:clamp(2.4rem,6vw,5rem);max-width:16ch;">We believe a gift should feel like a memory.</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container ab-story">
+      <div data-reveal>
+        <div class="frame" style="aspect-ratio:4/5;border-radius:2px;">
+          <img src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=1000&q=80&auto=format&fit=crop" alt="Founder of Made for a Moment wrapping a gift by hand in the studio">
+        </div>
+      </div>
+      <div data-reveal data-reveal-delay="1">
+        <p class="eyebrow-script">our story</p>
+        <h2 class="display-2" style="margin-top:6px;">One table. One idea.</h2>
+        <p class="lede" style="margin-top:18px;max-width:52ch;">It started at a kitchen table with leftover ribbon and a candle nobody had asked for. A birthday gift, made because a store-bought one didn't feel like enough. The reaction it got — that was the whole business plan.</p>
+        <p class="lede" style="margin-top:16px;max-width:52ch;">A few handmade gifts became a few dozen. A spare room became a studio. And a small community of people who'd rather give something made slowly than something picked quickly grew up around it.</p>
+        <p class="lede" style="margin-top:16px;max-width:52ch;">Today, every piece that leaves our studio is still touched by hand — measured, wrapped, and checked by someone who cares whether it lands right.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--cream);padding-top:60px;">
+    <div class="container">
+      <h2 class="display-3" data-reveal style="margin-bottom:36px;">How we got here.</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-reveal><span class="timeline-year">2021</span><p style="margin-top:10px;">A kitchen table, leftover ribbon, and one gift made for a friend's birthday.</p></div>
+        <div class="timeline-item" data-reveal data-reveal-delay="1"><span class="timeline-year">2022</span><p style="margin-top:10px;">Word spreads. Orders outgrow the kitchen table — the first real studio space.</p></div>
+        <div class="timeline-item" data-reveal data-reveal-delay="2"><span class="timeline-year">2024</span><p style="margin-top:10px;">A small team joins — each one trained by hand, the way the founder learned.</p></div>
+        <div class="timeline-item" data-reveal data-reveal-delay="3"><span class="timeline-year">2026</span><p style="margin-top:10px;">Thousands of gifts later, still wrapped one at a time, by hand.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="display-3" data-reveal style="margin-bottom:36px;">What we hold onto.</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card" data-reveal><h3 class="display-3" style="font-size:1.4rem;">Slow, on purpose</h3><p style="margin-top:12px;opacity:.75;">We'd rather take an extra day than rush a detail that matters.</p></div>
+      <div class="value-card" data-reveal data-reveal-delay="1"><h3 class="display-3" style="font-size:1.4rem;">Personal, always</h3><p style="margin-top:12px;opacity:.75;">A gift with someone's name on it works harder than one without.</p></div>
+      <div class="value-card" data-reveal data-reveal-delay="2"><h3 class="display-3" style="font-size:1.4rem;">Made to be kept</h3><p style="margin-top:12px;opacity:.75;">Packaging that isn't thrown away. Keepsakes that earn the word.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><p class="display-3">Made for a Moment</p><p>Some gifts are opened.<br>The best ones are remembered.</p></div>
+      <div class="footer-col"><h4>STUDIO</h4><a href="shop.html">Shop</a><a href="custom-gifts.html">Custom Gifts</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>FOLLOW</h4><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></div>
+      <div class="footer-col footer-newsletter"><h4>LITTLE NOTES FROM THE STUDIO</h4><form data-newsletter-form><input type="email" required placeholder="Your email" aria-label="Email address"><button type="submit" aria-label="Subscribe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Made for a Moment. Handmade in small batches.</span><span>Patna · Studio hours 10–6, Tue–Sun</span></div>
+  </div>
+</footer>
+
+<div class="cart-overlay" data-cart-close></div>
+<aside class="cart-drawer" aria-label="Shopping cart">
+  <div class="cart-head"><h3>Your Gift Bag</h3><button class="icon-btn" data-cart-close aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+  <div class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-row"><span>Subtotal</span><span data-cart-subtotal>$0.00</span></div>
+    <div class="cart-row"><span>Shipping</span><span data-cart-shipping>—</span></div>
+    <div class="cart-row total"><span>Total</span><span data-cart-total>$0.00</span></div>
+    <a href="shop.html" class="btn btn-outline btn-block" data-cart-close>Continue shopping</a>
+    <button class="btn btn-primary btn-block" onclick="showToast('Checkout is a demo — thank you for browsing!')">Checkout</button>
+  </div>
+</aside>
+
+<div class="search-overlay" aria-label="Search">
+  <button class="search-close" data-search-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <div class="container">
+    <div class="search-field"><input type="text" placeholder="What are you looking for?" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="30" height="30"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+    <p class="search-hint">Try “candle”, “box”, or “anniversary”.</p>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
